@@ -10,6 +10,7 @@ html {
 .title {
   text-align: center;
   color: #191919;
+  background-color: #ECDBBA;
 }
 
 .main {
@@ -31,11 +32,21 @@ html {
 
 }
 
-.big-grid {
+.small-grid {
 
-  grid-template-columns: repeat(100, auto);
+  grid-template-columns: repeat(64, auto);
 }
 
+.normal-grid {
+
+  grid-template-columns: repeat(16, auto);
+}
+
+.big-grid {
+
+  grid-template-columns: repeat(8, auto);
+
+}
 
 
 .button-container {
@@ -44,7 +55,7 @@ html {
   gap: 10px;
 }
 
-.clear-button, .new-button {
+.clear-button, .big-button, .normal-button, .small-button, .erase-button {
 
   background-color: #2D4263;
   color: #ECDBBA;
@@ -52,6 +63,12 @@ html {
   border: none;
   padding: 10px;
   font-family: 'Quintessential', sans-serif;
+}
+
+
+button:hover {
+
+  background-color:	#2F4F4F;
 }
 
 .grid-item {
